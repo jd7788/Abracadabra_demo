@@ -1,8 +1,4 @@
 .baseCard {
-  min-width: 200px;
-  max-width: 100%;
-  min-height: 100px;
-  max-height: 120px;
   background-color: rgb(var(--mdui-color-secondary-container));
   color: rgb(var(--mdui-color-secondary));
   padding: 10px;

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abracadabra Demo</title>
+    <title>魔曰 - Abracadabra</title>
+    <script>
+      Element.prototype._attachShadow = Element.prototype.attachShadow;
+      Element.prototype.attachShadow = function () {
+        return this._attachShadow({ mode: "open" });
+      };
+    </script>
   </head>
   <body>
     <div id="app"></div>

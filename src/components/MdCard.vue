@@ -14,8 +14,8 @@ const props = defineProps({
 const cardStyle = ref({});
 cardStyle.value = {
   background: props.Background,
-  "min-width": props.Width,
-  "min-height": props.Height,
+  width: props.Width,
+  height: props.Height,
   ...props.Other
 };
 </script>
