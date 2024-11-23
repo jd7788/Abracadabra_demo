@@ -27,7 +27,7 @@ export default defineConfig({
         icons: [
           //添加图标， 注意路径和图像像素正确
           {
-            src: "/favicon.png",
+            src: "assets/favicon.png",
             sizes: "1024x1024", //icon大小要与实际icon大小一致
             type: "image/png"
             // form_factor: "handset",
