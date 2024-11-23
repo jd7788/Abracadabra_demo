@@ -134,6 +134,11 @@ function ControlEncq() {
   }
 }
 
+async function KeyEnter() {
+  document.getElementById("KeyCard").blur();
+  await ProcessGo();
+}
+
 async function ProcessGo() {
   let Abra = new Abracadabra(InputMode.value, OutputMode.value);
   let key;
@@ -280,6 +285,7 @@ onBeforeUnmount(() => {});
       </Card>
       <div id="controlBar" style="grid-area: 2; display: grid; grid-template-columns: 360px">
         <mdui-text-field
+          @keydown.enter="KeyEnter"
           id="KeyCard"
           variant="outlined"
           rows="1"
