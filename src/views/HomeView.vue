@@ -208,6 +208,14 @@ async function ProcessGo() {
   }
 }
 
+function copyall() {
+  if (document.getElementById("OutputText").value == "") {
+    return;
+  }
+  document.getElementById("OutputText").select();
+  navigator.clipboard.writeText(window.getSelection().toString());
+}
+
 onMounted(() => {
   ControlEnc();
 });
@@ -295,7 +303,19 @@ onBeforeUnmount(() => {});
         label="符文"
         placeholder="回路末端的符文"
         style="grid-area: 3; height: 120px; width: 360px"
-      ></mdui-text-field>
+      >
+      </mdui-text-field>
+      <mdui-button-icon
+        icon="content_copy--rounded"
+        style="
+          position: absolute;
+          bottom: 95px;
+          right: 22px;
+          background: rgb(11 11 11 / 25%);
+          backdrop-filter: blur(2px);
+        "
+        @click="copyall"
+      ></mdui-button-icon>
       <Card
         v-if="OutputMode == 'UINT8'"
         id="FileCard2"

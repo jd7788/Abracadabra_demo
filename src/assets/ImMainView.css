@@ -150,3 +150,7 @@
 mdui-text-field::part(label) {
   background-color: transparent;
 }
+
+mdui-text-field::part(input) {
+  scrollbar-width: none;
+}
