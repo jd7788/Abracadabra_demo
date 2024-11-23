@@ -145,7 +145,7 @@ async function ProcessGo() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写符文，自动使用默认符文，这不安全",
+          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
           autoCloseDelay: 1500
         });
       } else {
@@ -169,7 +169,7 @@ async function ProcessGo() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写符文，自动使用默认符文，这不安全",
+          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
           autoCloseDelay: 1500
         });
       } else {
@@ -234,7 +234,7 @@ onBeforeUnmount(() => {});
         height: fit-content;
         width: fit-content;
       "
-      >Abracadabra V2.5.2</span
+      >Abracadabra</span
     >
   </div>
   <Card id="FunctionCard">
@@ -275,8 +275,8 @@ onBeforeUnmount(() => {});
           id="KeyCard"
           variant="outlined"
           rows="1"
-          label="符文"
-          placeholder="将一切雪藏的符文"
+          label="魔咒"
+          placeholder="将一切雪藏的魔咒"
           style="grid-column: span 3; align-self: center; width: 360px"
         ></mdui-text-field>
         <mdui-button
@@ -284,7 +284,7 @@ onBeforeUnmount(() => {});
           @click="ProcessGo"
           full-width
           style="align-self: center"
-          >将那魔法吟唱</mdui-button
+          >吟唱你的魔法</mdui-button
         >
       </div>
       <mdui-text-field
@@ -292,8 +292,8 @@ onBeforeUnmount(() => {});
         id="OutputText"
         variant="outlined"
         rows="4"
-        label="真意"
-        placeholder="话语所传达的真意"
+        label="符文"
+        placeholder="回路末端的符文"
         style="grid-area: 3; height: 120px; width: 360px"
       ></mdui-text-field>
       <Card
@@ -306,10 +306,42 @@ onBeforeUnmount(() => {});
       >
         <h1 style="align-self: center; justify-self: center">输出文件</h1>
       </Card>
-      <p style="position: relative; width: 100%; top: 38px; text-align: center; font-size: 1rem">
-        Powered by Abracadabra<br />
-        2024 © SheepChef<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
-      </p>
+      <div id="CopyrightBadger" style="grid-area: 4; display: grid; grid-template-columns: 50% 50%">
+        <p
+          style="
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            top: 60px;
+            font-size: 1rem;
+            font-variant: petite-caps;
+            text-align: left;
+            padding: 6px;
+            border-radius: inherit;
+            margin: 0px;
+          "
+        >
+          Abracadabra V2.5.2<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
+        </p>
+        <p
+          style="
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            top: 92px;
+            font-size: 1rem;
+            font-variant: petite-caps;
+            text-align: left;
+            padding: 6px;
+            border-radius: inherit;
+            margin: 0px;
+            justify-self: end;
+            opacity: 0.5;
+          "
+        >
+          SheepChef ©
+        </p>
+      </div>
     </div>
   </Card>
   <Card id="FloatCard">
