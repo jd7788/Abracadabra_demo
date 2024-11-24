@@ -11,6 +11,7 @@ import { Abracadabra } from "abracadabra-cn";
 
 const InputMode = ref("TEXT");
 const OutputMode = ref("TEXT");
+const ShowPWAButton = ref(true);
 const ForceEnc = ref(false);
 const ForceDec = ref(false);
 const ForceEncq = ref(false);
@@ -105,6 +106,14 @@ function handleFiles(files) {
     // 在这里可以执行文件上传的相关操作
   }
 }
+
+const isPWA = () => {
+  const displayModes = ["fullscreen", "standalone", "minimal-ui"];
+  const matchesPwa = displayModes.some(
+    (displayMode) => window.matchMedia("(display-mode: " + displayMode + ")").matches
+  );
+  return matchesPwa || window.navigator?.standalone || document.referrer.includes("android-app://");
+};
 
 function ControlEnc() {
   if (document.getElementById("ForceEnc").checked == true) {
@@ -221,7 +230,28 @@ function copyall() {
   navigator.clipboard.writeText(window.getSelection().toString());
 }
 
+async function InstallPWA() {
+  if (window.deferredPrompt) {
+    // 显示安装提示
+    window.deferredPrompt.prompt();
+    // 等待用户响应
+    const userResponse = await window.deferredPrompt.userChoice;
+    if (userResponse.outcome === "accepted") {
+      snackbar({
+        message: "感谢你选择魔曰",
+        placement: "top-end"
+      });
+    } else {
+      console.log("PWA Install cancelled");
+    }
+    // 重置提示变量
+  }
+}
+
 onMounted(() => {
+  if (isPWA()) {
+    ShowPWAButton.value = false;
+  }
   ControlEnc();
 });
 onBeforeUnmount(() => {});
@@ -349,18 +379,33 @@ onBeforeUnmount(() => {});
         >
           Abracadabra V2.5.2<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
         </p>
+        <mdui-chip
+          v-if="ShowPWAButton"
+          elevated
+          icon="file_download--rounded"
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 15px;
+            background: rgba(11, 11, 11, 0.25);
+            backdrop-filter: blur(2px);
+          "
+          @click="InstallPWA"
+          >安装应用</mdui-chip
+        >
         <p
           style="
             position: relative;
             width: fit-content;
             height: fit-content;
-            top: 92px;
+            top: 98px;
             font-size: 1rem;
             font-variant: petite-caps;
             text-align: left;
-            padding: 6px;
+            padding: 0px;
             border-radius: inherit;
             margin: 0px;
+            right: 4px;
             justify-self: end;
             opacity: 0.5;
           "
