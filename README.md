@@ -18,6 +18,8 @@ C++ 版本和 Node.js 版本完全等效，密文可以互相交叉解密。
 
 **查阅 Web 实现**: [**dev_node Branch**](https://github.com/SheepChef/Abracadabra/tree/dev_nodejs)
 
+**查阅浏览器插件源码**: [**Abracadabra-demo**](https://github.com/SheepChef/Abracadabra_demo/tree/crx)
+
 Telegram: [@abracadabra_cn](https://t.me/abracadabra_cn)
 
 ## 特性
@@ -57,4 +59,5 @@ npm run build
 | 密文构成     | ✅ 常见字         | 🟡 罕见字       |
 | 密文特征     | ✅ 无明显特征     | ❌ 特征明显     |
 | 文件加密     | ✅ 支持(较慢)     | ❌ 不支持       |
+| 浏览器插件   | ✅ 支持           | ❌ 不支持       |
 | 开源         | ✅ 开源           | ❌ 不开源       |
