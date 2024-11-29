@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Abracadabra(魔曰)** 是一个文本即时加密/脱敏工具，也可用于加密文件，你正在查阅其Demo示范页。本 Demo 支持PWA，完全响应式设计
+**Abracadabra(魔曰)** 是一个文本即时加密/脱敏工具，也可用于加密文件，你正在查阅其Demo示范页。本 Demo 支持PWA，完全响应式设计。
 
 Abracadabra 是表演魔术 (施魔法) 时所念的咒语，**魔曰** 是本项目的中文别名。
 
@@ -10,15 +10,15 @@ C++ 版本和 Node.js 版本完全等效，密文可以互相交叉解密。
 
 设计它的初衷，是为了在中文互联网上公开合理地传输不安全的信息。
 
-**在线体验**: [**Github DEMO Page**](https://sheepchef.github.io/Abracadabra_demo/)
+<a href="https://chrome.google.com/webstore/detail/jgmlgdoefnmlealmfmhjhnoiejaifpko">
+<img src="https://github.com/user-attachments/assets/9d2a3518-eb92-4c52-9191-098d1abdd399">
+</a>
 
-**在线体验(国内直连)**: [**Cloudflare DEMO Page**](https://abracadabra-demo.pages.dev/)
+**在线体验**: [**Cloudflare DEMO Page**](https://abracadabra-demo.pages.dev/)
 
-**查阅 C++ 实现**: [**dev_c Branch**](https://github.com/SheepChef/Abracadabra/tree/dev_c)
+**主项目**: [**dev_c Branch**](https://github.com/SheepChef/Abracadabra/)
 
-**查阅 Web 实现**: [**dev_node Branch**](https://github.com/SheepChef/Abracadabra/tree/dev_nodejs)
-
-**查阅浏览器插件源码**: [**Abracadabra-demo**](https://github.com/SheepChef/Abracadabra_demo/tree/crx)
+**浏览器插件源码**: [**Abracadabra-demo**](https://github.com/SheepChef/Abracadabra_demo/tree/crx)
 
 Telegram: [@abracadabra_cn](https://t.me/abracadabra_cn)
 
