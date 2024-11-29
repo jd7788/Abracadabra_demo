@@ -16,7 +16,7 @@ C++ 版本和 Node.js 版本完全等效，密文可以互相交叉解密。
 
 **在线体验**: [**Cloudflare DEMO Page**](https://abracadabra-demo.pages.dev/)
 
-**主项目**: [**dev_c Branch**](https://github.com/SheepChef/Abracadabra/)
+**主项目**: [**Abracadabra**](https://github.com/SheepChef/Abracadabra/)
 
 **浏览器插件源码**: [**Abracadabra-demo**](https://github.com/SheepChef/Abracadabra_demo/tree/crx)
 
