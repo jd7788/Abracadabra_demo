@@ -180,4 +180,5 @@ mdui-text-field::part(label) {
 
 mdui-text-field::part(input) {
   scrollbar-width: none;
+  line-break: anywhere;
 }
