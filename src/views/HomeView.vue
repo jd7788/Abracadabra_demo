@@ -377,7 +377,7 @@ onBeforeUnmount(() => {});
             margin: 0px;
           "
         >
-          Abracadabra V2.6.5<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
+          Abracadabra V2.6.6<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
         </p>
         <mdui-chip
           v-if="ShowPWAButton"
