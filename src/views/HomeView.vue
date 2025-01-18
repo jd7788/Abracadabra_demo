@@ -327,7 +327,7 @@ onBeforeUnmount(() => {});
           icon="arrow_downward--rounded"
           @click="ProcessGo"
           full-width
-          style="align-self: center"
+          style="align-self: center; top: -4px"
           >吟唱你的魔法</mdui-button
         >
       </div>
@@ -377,7 +377,7 @@ onBeforeUnmount(() => {});
             margin: 0px;
           "
         >
-          Abracadabra V2.6.6<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
+          Abracadabra V2.6.8<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
         </p>
         <mdui-chip
           v-if="ShowPWAButton"
