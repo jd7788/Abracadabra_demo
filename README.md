@@ -1,6 +1,6 @@
 # Abracadabra：魔曰
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License](https://img.shields.io/github/license/SheepChef/Abracadabra?color=yellow)
 
 **Abracadabra(魔曰)** 是一个文本即时加密/脱敏工具，也可用于加密文件，你正在查阅其Demo示范页。本 Demo 支持PWA，完全响应式设计。
 
@@ -31,7 +31,13 @@ Telegram: [@abracadabra_cn](https://t.me/abracadabra_cn)
 - 安心，密码表中已剔除敏感汉字。
 - 安全，AES256 + 三重转轮加密。
 
-## 部署说明
+## 快速部署
+
+如果你不想修改源码，可以直接下载Release内的构建版本。
+
+把构建版本解压到你网站的指定位置，快速部署即完成。
+
+## 编译部署
 
 本示范页使用 Vue 和 Vite
 
