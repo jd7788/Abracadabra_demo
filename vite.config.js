@@ -40,7 +40,7 @@ export default defineConfig({
         runtimeCaching: [
           {
             urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-            handler: "CacheFirst",
+            handler: "NetworkFirst",
             options: {
               cacheName: "wisbayar-images",
               expiration: {
