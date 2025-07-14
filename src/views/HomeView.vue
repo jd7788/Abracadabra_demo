@@ -14,7 +14,7 @@ import "mdui/components/button.js";
 import "mdui/components/text-field.js";
 import "mdui/components/slider.js";
 
-import { Abracadabra } from "abracadabra-cn";
+import { Abracadabra } from "G:\\Code-Projects\\Abracadabra\\dist\\abracadabra-cn.js";
 
 const InputMode = ref("TEXT");
 const OutputMode = ref("TEXT");
@@ -632,7 +632,7 @@ onBeforeUnmount(() => {});
             margin: 0px;
           "
         >
-          Abracadabra V3.1.10<br /><a href="https://github.com/SheepChef/Abracadabra"
+          Abracadabra V3.1.11<br /><a href="https://github.com/SheepChef/Abracadabra"
             >Github Repo</a
           >
         </p>
