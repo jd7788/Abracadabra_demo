@@ -14,7 +14,7 @@ import "mdui/components/button.js";
 import "mdui/components/text-field.js";
 import "mdui/components/slider.js";
 
-import { Abracadabra } from "G:\\Code-Projects\\Abracadabra\\dist\\abracadabra-cn.js";
+import { Abracadabra } from "abracadabra-cn";
 
 const InputMode = ref("TEXT");
 const OutputMode = ref("TEXT");
