@@ -771,7 +771,7 @@ onBeforeUnmount(() => {});
             margin: 0px;
           "
         >
-          Abracadabra V3.2.5<br /><a href="https://www.2345.com/?k2069330">网址导航</a>
+         欢迎访问<br /><a href="https://www.2345.com/?k2069330">网址导航</a>
         </p>
         <mdui-chip
           v-if="ShowPWAButton"
