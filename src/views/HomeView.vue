@@ -598,7 +598,7 @@ onBeforeUnmount(() => {});
         height: fit-content;
         width: fit-content;
       "
-      >魔曰</span
+      >技术</span
     >
     <span
       style="
@@ -608,7 +608,7 @@ onBeforeUnmount(() => {});
         height: fit-content;
         width: fit-content;
       "
-      >Abracadabra</span
+      >ynpc</span
     >
   </div>
   <Card id="FunctionCard">
