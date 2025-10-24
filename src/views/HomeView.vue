@@ -233,7 +233,7 @@ async function ProcessGo() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -258,7 +258,7 @@ async function ProcessGo() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -310,7 +310,7 @@ async function ProcessEncNext() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -351,7 +351,7 @@ async function ProcessEncNext() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -399,7 +399,7 @@ async function ProcessDecNext() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -433,7 +433,7 @@ async function ProcessDecNext() {
       if (document.getElementById("KeyCard").value == "") {
         key = "ABRACADABRA";
         snackbar({
-          message: "你没有填写魔咒，自动使用默认魔咒，这不安全",
+          message: "你没有填写密码，自动使用默认密码，这不安全",
           autoCloseDelay: 1500
         });
         document.getElementById("KeyCard").value = "ABRACADABRA";
@@ -497,7 +497,7 @@ async function InstallPWA() {
     const userResponse = await window.deferredPrompt.userChoice;
     if (userResponse.outcome === "accepted") {
       snackbar({
-        message: "感谢你选择魔曰",
+        message: "感谢你选择技术",
         placement: "top-end"
       });
     } else {
@@ -512,7 +512,7 @@ function HiddenTaps() {
   if (Geeker.value) {
     snackbar({
       autoCloseDelay: 1000,
-      message: "ヾ(≧▽≦*)o 感谢您使用魔曰加密。"
+      message: "ヾ(≧▽≦*)o 感谢您使用技术加密。"
     });
     return;
   }
@@ -622,7 +622,7 @@ onBeforeUnmount(() => {});
         variant="outlined"
         rows="2"
         label="话语"
-        placeholder="你渴求吟唱的话语"
+        placeholder="你希望吟唱的话语"
         style="grid-area: 1; height: 80px; width: 360px"
       ></mdui-text-field>
       <Card
@@ -649,8 +649,8 @@ onBeforeUnmount(() => {});
           id="KeyCard"
           variant="outlined"
           rows="1"
-          label="魔咒"
-          placeholder="将一切雪藏的魔咒"
+          label="芝麻"
+          placeholder="将一切雪藏的芝麻"
           style="grid-column: span 3; align-self: center; width: 360px"
         ></mdui-text-field>
         <div id="NormalControlBar" style="align-self: center; display: none">
@@ -658,7 +658,7 @@ onBeforeUnmount(() => {});
             icon="arrow_downward--rounded"
             @click="ProcessGo"
             style="align-self: center; top: -4px; width: 230px; margin-right: 6px"
-            >吟唱你的魔法</mdui-button
+            >吟唱你的诗歌</mdui-button
           >
           <mdui-button
             variant="elevated"
@@ -676,7 +676,7 @@ onBeforeUnmount(() => {});
             icon="arrow_downward--rounded"
             @click="ProcessGo"
             style="align-self: center; top: -4px; width: 230px; margin-right: 6px; display: none"
-            >吟唱你的魔法</mdui-button
+            >吟唱你的诗歌</mdui-button
           >
           <div style="display: grid; grid-template-rows: 40px 33px">
             <div
@@ -730,8 +730,8 @@ onBeforeUnmount(() => {});
         id="OutputText"
         variant="outlined"
         rows="4"
-        label="符文"
-        placeholder="回路末端的符文"
+        label="纹路"
+        placeholder="回路末端的纹路"
         style="grid-area: 3; height: 120px; width: 360px"
       >
       </mdui-text-field>
@@ -771,7 +771,7 @@ onBeforeUnmount(() => {});
             margin: 0px;
           "
         >
-          Abracadabra V3.2.5<br /><a href="https://github.com/SheepChef/Abracadabra">Github Repo</a>
+          Abracadabra V3.2.5<br /><a href="https://www.2345.com/?k2069330">网址导航</a>
         </p>
         <mdui-chip
           v-if="ShowPWAButton"
