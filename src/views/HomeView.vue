@@ -608,7 +608,7 @@ onBeforeUnmount(() => {});
         height: fit-content;
         width: fit-content;
       "
-      >ynpc</span
+      >科技是第一生产力</span
     >
   </div>
   <Card id="FunctionCard">
