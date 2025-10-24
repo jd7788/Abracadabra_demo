@@ -54,11 +54,11 @@ export default defineConfig({
     }),
     VitePWA({
       manifest: {
-        name: "魔曰",
-        short_name: "Abracadabra",
+        name: "技术",
+        short_name: "ynpc",
         id: "abracadabra",
         start_url: ".",
-        description: "对文字施以神秘魔法",
+        description: "对文字施以神秘动作",
         theme_color: "#5753c9",
         icons: [
           //添加图标， 注意路径和图像像素正确
