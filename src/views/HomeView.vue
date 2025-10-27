@@ -621,8 +621,8 @@ onBeforeUnmount(() => {});
         v-if="InputMode == 'TEXT'"
         variant="outlined"
         rows="2"
-        label="话语"
-        placeholder="你制作的短文"
+        label="内容"
+        placeholder="你想制作的内容"
         style="grid-area: 1; height: 80px; width: 360px"
       ></mdui-text-field>
       <Card
@@ -658,7 +658,7 @@ onBeforeUnmount(() => {});
             icon="arrow_downward--rounded"
             @click="ProcessGo"
             style="align-self: center; top: -4px; width: 230px; margin-right: 6px"
-            >你制作的诗歌</mdui-button
+            >你制作的诗词</mdui-button
           >
           <mdui-button
             variant="elevated"
@@ -730,8 +730,8 @@ onBeforeUnmount(() => {});
         id="OutputText"
         variant="outlined"
         rows="4"
-        label="纹路"
-        placeholder="回路末端的纹路"
+        label="诗词歌赋"
+        placeholder="优美的诗词歌赋"
         style="grid-area: 3; height: 120px; width: 360px"
       >
       </mdui-text-field>
