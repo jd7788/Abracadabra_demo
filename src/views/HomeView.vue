@@ -622,7 +622,7 @@ onBeforeUnmount(() => {});
         variant="outlined"
         rows="2"
         label="话语"
-        placeholder="你希望吟唱的话语"
+        placeholder="你制作的短文"
         style="grid-area: 1; height: 80px; width: 360px"
       ></mdui-text-field>
       <Card
@@ -649,7 +649,7 @@ onBeforeUnmount(() => {});
           id="KeyCard"
           variant="outlined"
           rows="1"
-          label="芝麻"
+          label="芝麻开门"
           placeholder="将一切雪藏的芝麻"
           style="grid-column: span 3; align-self: center; width: 360px"
         ></mdui-text-field>
@@ -658,7 +658,7 @@ onBeforeUnmount(() => {});
             icon="arrow_downward--rounded"
             @click="ProcessGo"
             style="align-self: center; top: -4px; width: 230px; margin-right: 6px"
-            >吟唱你的诗歌</mdui-button
+            >你制作的诗歌</mdui-button
           >
           <mdui-button
             variant="elevated"
@@ -676,7 +676,7 @@ onBeforeUnmount(() => {});
             icon="arrow_downward--rounded"
             @click="ProcessGo"
             style="align-self: center; top: -4px; width: 230px; margin-right: 6px; display: none"
-            >吟唱你的诗歌</mdui-button
+            >你的诗词</mdui-button
           >
           <div style="display: grid; grid-template-rows: 40px 33px">
             <div
